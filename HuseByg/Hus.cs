@@ -26,7 +26,7 @@ namespace HuseByg
         public Hus(string adresse)
         {
             count++;
-            this._id = $"#{count}"; 
+            this._id = $"H{count}"; 
             this._adresse = adresse;
         }
     }

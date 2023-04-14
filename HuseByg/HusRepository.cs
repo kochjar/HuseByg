@@ -8,11 +8,20 @@ namespace HuseByg
 {
     public class HusRepository
     {
-        public List<Hus> huse = new List<Hus>();
+        private List<Hus> huse = new List<Hus>();
 
-        public void TilføjHus(Hus hus)
+        public void TilføjHus(string adresse)
         {
+            Hus hus = new Hus(adresse);
             huse.Add(hus);
         }
+
+        public List<Hus> HentAlleHuse()
+        {
+            return huse;
+        }
+
+       
     }
 }
+

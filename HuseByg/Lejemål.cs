@@ -32,7 +32,7 @@ namespace HuseByg
         public Lejemål(DateTime startdato, DateTime slutdato)
         {
             count++;
-            this._id = $"#{count}";
+            this._id = $"LM{count}";
             this._startdato = startdato;
             this._slutdato= slutdato;
         }
