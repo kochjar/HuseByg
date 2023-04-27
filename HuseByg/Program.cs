@@ -37,13 +37,13 @@ namespace HuseByg
 
             foreach (Hus hus in huse)
             {
-                Console.WriteLine($"{hus.HusId}: {hus.Adresse}");
+                Console.WriteLine($"  {hus.HusId}: {hus.Adresse}");
                 if (hus.Lejemål != null)
                 {
-                    Console.WriteLine($"  Indbetalt Depositum: {hus.Lejemål.IndbetaltDepositum}, Hund: {hus.Lejemål.AntalHunde}, Katte: {hus.Lejemål.AntalKatte}");
+                    Console.WriteLine($"      Indbetalt Depositum: {hus.Lejemål.IndbetaltDepositum}, Hund: {hus.Lejemål.AntalHunde}, Katte: {hus.Lejemål.AntalKatte}");
                     foreach (Lejer lejer in hus.Lejemål.Lejere)
                     {
-                        Console.WriteLine($"  {lejer.LejerId}: {lejer.navn}, {lejer.mail}");
+                        Console.WriteLine($"      {lejer.LejerId}: {lejer.navn}, {lejer.mail}");
                     }
 
                 }

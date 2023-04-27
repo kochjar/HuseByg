@@ -79,5 +79,15 @@ namespace HuseByg.controller
         public List<Lejemål> HentAlleLejemål() { return lejemålRepository.HentAlleLejemål(); }
 
 
+        public Lejemål HentLejemål(string LejemålId)
+        {
+            foreach (Lejemål lejemål in lejemålRepository.HentAlleLejemål())
+            {
+                if (lejemål.LejemålId == LejemålId) { return lejemål; }
+            }
+            return null;
+        }
+
+
     }
 }
